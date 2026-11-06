@@ -187,3 +187,26 @@
     padding: 4rem 2rem;
   }
 }
+
+/* Brand logo tiles: a light tile keeps every logo in its true colours on both themes */
+.skill-icon.skill-logo {
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+body.dark .skill-icon.skill-logo {
+  background: #f1f5f9;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.skill-icon.skill-logo img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.skill-icon.skill-fa {
+  color: #ffffff;
+  font-size: 1.3rem;
+}

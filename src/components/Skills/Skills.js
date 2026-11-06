@@ -47,15 +47,26 @@ export default function SkillGrid() {
                     <div className="corner-br-h"></div>
                     <div className="corner-br-v"></div>
 
-                    <motion.div
-                      className="skill-icon"
-                      style={{
-                        backgroundColor: skill.color,
-                        color: skill.textColor,
-                      }}
-                    >
-                      {skill.icon}
-                    </motion.div>
+                    {skill.logo ? (
+                      <div className="skill-icon skill-logo">
+                        <img
+                          src={`${process.env.PUBLIC_URL || ""}/images/skillIcons/${skill.logo}.svg`}
+                          alt=""
+                          width={30}
+                          height={30}
+                          loading="lazy"
+                          decoding="async"
+                          draggable="false"
+                        />
+                      </div>
+                    ) : (
+                      <div
+                        className="skill-icon skill-fa"
+                        style={{ backgroundColor: skill.color }}
+                      >
+                        <i className={skill.fa} aria-hidden="true"></i>
+                      </div>
+                    )}
                     <div className="skill-name">{skill.name}</div>
 
                     {/* Animated top-left & bottom-right corners */}
