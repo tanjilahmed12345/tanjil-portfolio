@@ -225,12 +225,12 @@ export const activities = [
       "Led club operations, organised programming contests and training sessions, and mentored students in competitive programming.",
   },
   {
-    role: "Vice President",
+    role: "Treasurer, then Vice President",
     organization: "SEC CSE Society",
-    duration: "Jun 2023 – Jun 2024",
+    duration: "Mar 2023 – Jun 2024",
     icon: "fa-solid fa-people-group",
     description:
-      "Organised academic events and technical seminars, and coordinated departmental activities between students and faculty.",
+      "Managed the society's funds as Treasurer, then as Vice President organised academic events and technical seminars and coordinated activities between students and faculty.",
   },
   {
     role: "Programming Workshop Instructor",
