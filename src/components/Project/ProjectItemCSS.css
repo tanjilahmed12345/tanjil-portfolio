@@ -139,40 +139,172 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-secondary);
+  background:
+    radial-gradient(120% 80% at 50% 0%, var(--primary-glow), transparent 60%),
+    var(--bg-secondary);
   position: relative;
   overflow: hidden;
   padding: 2.5rem;
+  min-width: 0;
 }
 
-.image-wrapper {
+/* Browser-style preview frame */
+.browser-frame {
+  display: block;
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: var(--card-shadow);
-  transition: all 0.3s ease;
-  background-color: var(--bg-primary);
+  background: var(--bg-primary);
   border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  text-decoration: none;
+  transition:
+    transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s ease;
 }
 
-.project-card:hover .image-wrapper {
-  box-shadow: var(--card-hover-shadow);
+.project-card:hover .browser-frame {
+  transform: translateY(-4px) rotate(-0.4deg);
+  box-shadow: var(--card-hover-shadow), 0 0 0 1px var(--primary-glow);
 }
 
-.image-wrapper img {
+.project-card.reverse:hover .browser-frame {
+  transform: translateY(-4px) rotate(0.4deg);
+}
+
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.75rem;
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.browser-dots {
+  display: inline-flex;
+  gap: 5px;
+  flex-shrink: 0;
+}
+
+.browser-dots i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #f87171;
+}
+
+.browser-dots i:nth-child(2) {
+  background: #fbbf24;
+}
+
+.browser-dots i:nth-child(3) {
+  background: #34d399;
+}
+
+.browser-url {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  background: var(--bg-primary);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.browser-url i {
+  font-size: 0.62rem;
+  margin-right: 0.25rem;
+  color: var(--accent);
+}
+
+.browser-badge {
+  flex-shrink: 0;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.browser-badge.client {
+  color: var(--primary);
+  background: var(--primary-glow);
+}
+
+.browser-view {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  max-width: 100%;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.browser-view img {
   display: block;
   width: 100%;
   height: auto;
+  min-height: 100%;
   object-fit: cover;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  object-position: top center;
+  transform: translateY(0);
+  transition: transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
 }
 
-.project-card:hover .image-wrapper img {
-  transform: scale(1.05);
+.browser-view.can-scroll img {
+  object-fit: initial;
+}
+
+/* Slow scroll through the full page on hover */
+.project-card:hover .browser-view.can-scroll img {
+  transform: translateY(var(--scroll));
+  transition: transform 7s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.project-card:hover .browser-view:not(.can-scroll) img {
+  transform: scale(1.04);
+}
+
+.scroll-hint {
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(3, 7, 18, 0.72);
+  backdrop-filter: blur(6px);
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-hint i {
+  margin-right: 0.3rem;
+}
+
+.project-card:hover .scroll-hint {
+  opacity: 0;
+}
+
+@media (hover: none) {
+  .scroll-hint {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card:hover .browser-view.can-scroll img {
+    transform: none;
+  }
 }
 
 /* Responsive adjustments */
@@ -196,8 +328,8 @@
     order: 1;
   }
 
-  .image-wrapper {
-    max-width: 100%;
+  .browser-frame {
+    max-width: 640px;
   }
 }
 

@@ -50,7 +50,8 @@ export const about = (
     College (CGPA <b>3.80/4.00</b>), co-author of <b>two IEEE papers</b>, and
     a competitive programmer — <b>Codeforces Expert (1678)</b>, CodeChef 3★
     and an <b>ICPC Asia Dhaka Regional</b> qualifier with{" "}
-    <b>2,000+ problems</b> solved.
+    <b>2,000+ problems</b> solved. I work comfortably in{" "}
+    <b>English, Bengali, Hindi and Urdu</b>.
   </>
 );
 
