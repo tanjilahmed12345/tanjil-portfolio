@@ -19,7 +19,7 @@ export const profile = {
   footerSubtitle: "Full-Stack Software Engineer",
   heroTagline: "I build things for the WEB",
   heroSubline:
-    "Full-Stack Engineer · 2 Yrs Industry Experience · 2× IEEE Publications · ICPC Regionalist",
+    "Full-Stack Engineer · 2 Yrs Industry Experience · 2,000+ DSA Problems Solved · 2× IEEE Publications",
   availability: "Open to Full-Time Roles",
 
   email: "ahmedtanjil12345@gmail.com",
@@ -46,9 +46,10 @@ export const about = (
     <b>Technext Limited</b>. I build production-ready full-stack applications
     with Next.js, React, Node.js and Django REST Framework, and I'm the
     co-author of <b>two IEEE-published papers</b> on blockchain systems. A
-    competitive programmer at heart — <b>ICPC Asia Dhaka Regional</b>{" "}
-    qualifier — I'm especially interested in applied AI and building
-    reliable, scalable software.
+    competitive programmer at heart — <b>Codeforces Expert (1661)</b>,{" "}
+    <b>CodeChef 3★ (1731)</b> and an <b>ICPC Asia Dhaka Regional</b>{" "}
+    qualifier with <b>2,000+ problems</b> solved — I'm especially interested
+    in applied AI and building reliable, scalable software.
   </>
 );
 
@@ -160,19 +161,17 @@ export const tapeWords = [
 
 /* ---------- Experience ----------
    duration format must be "Mon YYYY – Mon YYYY" (or "– Present");
-   the length (e.g. "2 yrs") is calculated automatically.
-   TODO: the CV only lists project names for Technext — rewrite the
-   bullets below with your real responsibilities and numbers. */
+   the length (e.g. "2 yrs") is calculated automatically. */
 export const experience = [
   {
     role: "💻 Junior Software Engineer",
     organization: "Technext Limited",
     duration: "Aug 2024 – Jul 2026",
     details: [
-      "Built and maintained production web applications for international clients, including GreySheet, OneSuite and Bamboo Lighting.",
-      "Developed responsive, component-driven front-ends with React and Next.js and integrated them with REST APIs.",
-      "Customised and extended Shopify storefronts with Liquid, improving performance and the shopping experience.",
-      "Worked in Git-based team workflows with code reviews and sprint planning, shipping features from spec to deployment.",
+      "Optimized GreySheet, an antique coin and banknote pricing platform, to handle over 12 million records (12,228,954 data points) with seamless performance and scalability.",
+      "Core member of the JavaScript team, delivering high-quality features across multiple client projects — GreySheet, OneSuite and Bamboo Lighting — within tight deadlines.",
+      "Developed and customized Shopify themes with vanilla CSS, JavaScript and the Liquid template engine to build responsive storefronts that met real client business requirements.",
+      "Worked as a full-stack developer on diverse projects for European clients, ensuring seamless front-end and back-end integration.",
     ],
   },
   {
@@ -180,8 +179,8 @@ export const experience = [
     organization: "Technext Limited",
     duration: "May 2024 – Jul 2024",
     details: [
-      "Contributed to DermaQuest, a client web platform, implementing UI features and fixing production issues.",
-      "Learned the team's development, review and deployment workflow and converted to a full-time role on completion.",
+      "Contributed to DermaQuest, a client web platform, building UI features with React and modern JavaScript.",
+      "Converted to a full-time Junior Software Engineer role at the end of the internship.",
     ],
   },
   {
@@ -248,6 +247,26 @@ export const projects = [
     deployedLink: "https://pharma-nest-bd.vercel.app/",
     sourceCodeLink: null, // TODO: add GitHub repo URL if public
   },
+  {
+    name: "Hospital Management System",
+    projectType: "Healthcare Operations Web App",
+    description:
+      "A web application that automates day-to-day tasks of a healthcare facility — patient records, doctors, appointments and billing — to improve efficiency, reduce costs and support better quality of care. Built on Django with a responsive Bootstrap front-end.",
+    languages: "Django | Python | HTML | CSS | Bootstrap | JavaScript",
+    image: `${PUBLIC}/images/projectImages/hospital-management.png`,
+    deployedLink: null,
+    sourceCodeLink: null, // TODO: add GitHub repo URL if public
+  },
+  {
+    name: "DX-Ball Game",
+    projectType: "Java Desktop Game",
+    description:
+      "A classic brick-breaker game built in Java with Swing and object-oriented design, featuring power-ups, multiple levels and smooth paddle-and-ball physics. Praised for its smooth mechanics and captivating visuals.",
+    languages: "Java | Swing | OOP | Game Loop | Collision Detection",
+    image: `${PUBLIC}/images/projectImages/dx-ball.png`,
+    deployedLink: null,
+    sourceCodeLink: null, // TODO: add GitHub repo URL if public
+  },
 ];
 
 /* ---------- Publications ---------- */
@@ -275,11 +294,29 @@ export const achievements = [
   {
     text: (
       <>
+        <span className="highlight2">Expert</span> on Codeforces with a maximum rating of{" "}
+        <span className="highlight1">1661</span> and <span className="highlight1">1,850+</span> problems solved.
+      </>
+    ),
+    link: "https://codeforces.com/profile/tanjil-ahmed",
+  },
+  {
+    text: (
+      <>
+        <span className="highlight2">3-star (⭐)</span> on CodeChef with a maximum contest rating of{" "}
+        <span className="highlight1">1731</span>.
+      </>
+    ),
+    link: "https://www.codechef.com/users/tanjilvai",
+  },
+  {
+    text: (
+      <>
         Qualified for the <span className="highlight2">ICPC Asia Dhaka Regional Contest</span>{" "}
         representing Sylhet Engineering College (<span className="highlight1">2023</span>).
       </>
     ),
-    link: null, // TODO: add ICPC team/standings link if you have one
+    link: null,
   },
   {
     text: (
@@ -320,23 +357,23 @@ export const achievements = [
   {
     text: (
       <>
-        Graduated <span className="highlight2">With Distinction</span> — CGPA{" "}
-        <span className="highlight1">3.80/4.00</span> in Computer Science &amp; Engineering.
+        Solved <span className="highlight1">2,000+</span> DSA problems across Codeforces, CodeChef, LightOJ and UVa.
       </>
     ),
-    link: null,
+    link: "https://lightoj.com/user/ahmedtanjil1",
   },
 ];
 
 /* ---------- Coding profiles ----------
    Entries with an empty `link` are hidden automatically.
-   TODO: fill in your handles, e.g. "https://codeforces.com/profile/<handle>" */
+   Add more handles any time (e.g. "https://leetcode.com/u/<handle>/"). */
 const ICONS = `${PUBLIC}/images/codingProfileIcons/`;
 export const codingProfiles = [
   { name: "GitHub", link: "https://github.com/tanjilahmed12345", icon: ICONS + "github.svg" },
-  { name: "Codeforces", link: "", icon: ICONS + "codeforces.png" },
+  { name: "Codeforces", link: "https://codeforces.com/profile/tanjil-ahmed", icon: ICONS + "codeforces.png" },
   { name: "LeetCode", link: "", icon: ICONS + "leetcode.png" },
-  { name: "CodeChef", link: "", icon: ICONS + "codechef.jpg" },
+  { name: "CodeChef", link: "https://www.codechef.com/users/tanjilvai", icon: ICONS + "codechef.jpg" },
+  { name: "LightOJ", link: "https://lightoj.com/user/ahmedtanjil1", icon: ICONS + "lightoj.svg" },
   { name: "AtCoder", link: "", icon: ICONS + "atcoder.png" },
   { name: "GeeksforGeeks", link: "", icon: ICONS + "gfg.png" },
 ];
