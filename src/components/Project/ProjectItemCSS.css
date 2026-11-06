@@ -220,3 +220,31 @@
     text-align: center;
   }
 }
+
+.project-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 0.25rem 0 1.25rem;
+  padding: 0;
+}
+
+.project-highlights li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.project-highlights li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.project-details p:has(+ .project-highlights) {
+  margin-bottom: 1rem;
+}

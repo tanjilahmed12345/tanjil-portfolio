@@ -11,6 +11,8 @@ const Projectitem = (props) => {
     image,
     index,
     projectType,
+    highlights,
+    deployedLabel = "Live Demo ↗",
   } = props;
   const isImageLeft = index % 2 !== 0;
 
@@ -30,6 +32,13 @@ const Projectitem = (props) => {
           <p className="project-subtitle">— {projectType}</p>
           <h3 className="project-title">{name}</h3>
           <p>{description}</p>
+          {highlights && highlights.length > 0 && (
+            <ul className="project-highlights">
+              {highlights.map((h) => (
+                <li key={h}>{h}</li>
+              ))}
+            </ul>
+          )}
           <div className="tech-tags">
             {languages.split("|").map((lang, tagIndex) => (
               <motion.span
@@ -65,7 +74,7 @@ const Projectitem = (props) => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Live Demo ↗
+                {deployedLabel}
               </motion.a>
             )}
           </div>

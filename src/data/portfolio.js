@@ -15,11 +15,11 @@ export const profile = {
   name: "Tanjil Ahmed",
   firstName: "Tanjil",
   initials: "TA",
-  title: "Software Engineer", // shown on loading screen
+  title: "Full-Stack Software Engineer", // shown on loading screen
   footerSubtitle: "Full-Stack Software Engineer",
-  heroTagline: "I build things for the WEB",
+  heroTagline: "I build scalable products for the WEB",
   heroSubline:
-    "Full-Stack Engineer · 2 Yrs Industry Experience · 2,000+ DSA Problems Solved · 2× IEEE Publications",
+    "Full-Stack Software Engineer · Next.js · React · Node.js · Django — 2+ years shipping SaaS, e-commerce and web platforms for clients across the USA & Europe.",
   availability: "Open to Full-Time Roles",
 
   email: "ahmedtanjil12345@gmail.com",
@@ -40,16 +40,17 @@ export const about = (
   <>
     Hi, I'm{" "}
     <b style={{ color: "var(--primary)", fontSize: "1.2em" }}>Tanjil Ahmed</b>{" "}
-    — a <b>Computer Science &amp; Engineering</b> graduate from{" "}
-    <b>Sylhet Engineering College (SUST)</b> with a CGPA of <b>3.80/4.00</b>{" "}
-    and <b>two years of professional experience</b> as a Software Engineer at{" "}
-    <b>Technext Limited</b>. I build production-ready full-stack applications
-    with Next.js, React, Node.js and Django REST Framework, and I'm the
-    co-author of <b>two IEEE-published papers</b> on blockchain systems. A
-    competitive programmer at heart — <b>Codeforces Expert (1661)</b>,{" "}
-    <b>CodeChef 3★ (1731)</b> and an <b>ICPC Asia Dhaka Regional</b>{" "}
-    qualifier with <b>2,000+ problems</b> solved — I'm especially interested
-    in applied AI and building reliable, scalable software.
+    — a <b>Full-Stack Software Engineer</b> with <b>2+ years</b> of
+    experience delivering scalable web applications, <b>SaaS platforms</b>{" "}
+    and <b>e-commerce solutions</b> for clients across the{" "}
+    <b>USA and Europe</b>. At <b>Technext Limited</b> I worked on products
+    like GreySheet, OneSuite and Shopify storefronts, and on my own I build
+    end-to-end apps with <b>Next.js, React, Node.js, Django REST Framework</b>{" "}
+    and <b>PostgreSQL</b>. I'm a <b>CSE graduate</b> from Sylhet Engineering
+    College (CGPA <b>3.80/4.00</b>), co-author of <b>two IEEE papers</b>, and
+    a competitive programmer — <b>Codeforces Expert (1678)</b>, CodeChef 3★
+    and an <b>ICPC Asia Dhaka Regional</b> qualifier with{" "}
+    <b>2,000+ problems</b> solved.
   </>
 );
 
@@ -91,12 +92,16 @@ export const skills = {
     { name: "Next.js", icon: "Next", color: "#000", textColor: "#fff" },
     { name: "Astro", icon: "🚀", color: "#ff5d01", textColor: "#fff" },
     { name: "Remix", icon: "R", color: "#121212", textColor: "#fff" },
+    { name: "NextUI", icon: "UI", color: "#000000", textColor: "#fff" },
     { name: "Redux", icon: "RX", color: "#764abc", textColor: "#fff" },
     { name: "Zustand", icon: "🐻", color: "#443e38", textColor: "#fff" },
     { name: "Tailwind CSS", icon: "TW", color: "#38b2ac", textColor: "#fff" },
     { name: "Bootstrap", icon: "B", color: "#563d7c", textColor: "#fff" },
     { name: "HTML5", icon: "HTML", color: "#e34f26", textColor: "#fff" },
-    { name: "CSS3 / SCSS", icon: "CSS", color: "#1572b6", textColor: "#fff" },
+    { name: "CSS3", icon: "CSS", color: "#1572b6", textColor: "#fff" },
+    { name: "SCSS / Sass", icon: "Sass", color: "#cc6699", textColor: "#fff" },
+    { name: "GSAP / Motion", icon: "✦", color: "#0ae448", textColor: "#000" },
+    { name: "Axios", icon: "Ax", color: "#5a29e4", textColor: "#fff" },
   ],
   Backend: [
     { name: "Node.js", icon: "Node", color: "#3c873a", textColor: "#fff" },
@@ -104,10 +109,12 @@ export const skills = {
     { name: "Django", icon: "Dj", color: "#0c4b33", textColor: "#fff" },
     { name: "Django REST Framework", icon: "DRF", color: "#a30000", textColor: "#fff" },
     { name: "REST API Design", icon: "API", color: "#2980b9", textColor: "#fff" },
-    { name: "JWT Authentication", icon: "🔐", color: "#d63aff", textColor: "#fff" },
+    { name: "JWT / SimpleJWT", icon: "🔐", color: "#d63aff", textColor: "#fff" },
+    { name: "ASP.NET MVC / Razor", icon: ".NET", color: "#512bd4", textColor: "#fff" },
   ],
   "Databases & ORM": [
     { name: "PostgreSQL", icon: "🐘", color: "#336791", textColor: "#fff" },
+    { name: "Neon / Supabase", icon: "⚡", color: "#00e599", textColor: "#000" },
     { name: "MySQL", icon: "🐬", color: "#4479A1", textColor: "#fff" },
     { name: "MongoDB", icon: "🍃", color: "#13aa52", textColor: "#fff" },
     { name: "Prisma ORM", icon: "◭", color: "#2d3748", textColor: "#fff" },
@@ -118,7 +125,7 @@ export const skills = {
     { name: "Vercel", icon: "▲", color: "#000000", textColor: "#fff" },
     { name: "Netlify", icon: "◈", color: "#00C7B7", textColor: "#fff" },
     { name: "Render", icon: "Rd", color: "#46e3b7", textColor: "#000" },
-    { name: "Shopify / Liquid", icon: "🛍️", color: "#95bf47", textColor: "#fff" },
+    { name: "Shopify Themes / Liquid", icon: "🛍️", color: "#95bf47", textColor: "#fff" },
   ],
   "Developer Tools": [
     { name: "Git", icon: "Git", color: "#f34f29", textColor: "#fff" },
@@ -168,10 +175,10 @@ export const experience = [
     organization: "Technext Limited",
     duration: "Aug 2024 – Jul 2026",
     details: [
-      "Optimized GreySheet, an antique coin and banknote pricing platform, to handle over 12 million records (12,228,954 data points) with seamless performance and scalability.",
-      "Core member of the JavaScript team, delivering high-quality features across multiple client projects — GreySheet, OneSuite and Bamboo Lighting — within tight deadlines.",
-      "Developed and customized Shopify themes with vanilla CSS, JavaScript and the Liquid template engine to build responsive storefronts that met real client business requirements.",
-      "Worked as a full-stack developer on diverse projects for European clients, ensuring seamless front-end and back-end integration.",
+      "Built responsive UI for GreySheet (USA), a coin & currency pricing platform for collectors and dealers — 15+ page modules including marketplace, cart and subscription-gated pricing tools on ASP.NET MVC 5 and Razor.",
+      "Built OneSuite's multilingual SaaS marketing site with Astro, React and TypeScript — 140+ static pages, 155+ reusable components and a full SEO pipeline (JSON-LD, auto sitemaps, locale-aware Open Graph).",
+      "Upgraded the Bmboo Lighting (USA) Shopify storefront — image zoom, variant swatches, sticky add-to-cart, cart drawer and free-shipping bar — refining 104 sections and 165+ snippets.",
+      "Shipped across multi-environment pipelines (Dev, Beta, LiveTest, Production) as a core member of the JavaScript team, delivering features for USA and European clients under tight deadlines.",
     ],
   },
   {
@@ -179,8 +186,8 @@ export const experience = [
     organization: "Technext Limited",
     duration: "May 2024 – Jul 2024",
     details: [
-      "Contributed to DermaQuest, a client web platform, building UI features with React and modern JavaScript.",
-      "Converted to a full-time Junior Software Engineer role at the end of the internship.",
+      "Converted a custom design into a production Shopify storefront for DermaQuest (USA), a 20+ year professional skincare brand, with a mobile-first responsive layout.",
+      "Built an international checkout with multiple payment methods, a dynamic product catalog, and SEO and performance optimisations — then converted to a full-time role.",
     ],
   },
   {
@@ -212,60 +219,138 @@ export const experience = [
   },
 ];
 
-/* ---------- Projects ---------- */
+/* ---------- Projects ----------
+   category: "client" (built at Technext) or "personal".
+   highlights: up to 3 short bullets shown under the description. */
 export const projects = [
   {
+    category: "personal",
     name: "Sunnah Cure",
-    projectType: "Appointment Booking Platform",
+    projectType: "Full Stack · Appointment Booking Platform",
     description:
-      "Full-stack Islamic medicine platform with 3 role-based dashboards and 40+ REST APIs covering the complete appointment lifecycle. Features JWT auth, FSM-based appointment states, Stripe and bKash/Nagad payments, real-time messaging via Pusher and automated notifications — delivered bilingual (English/Bengali).",
+      "A full-stack Islamic medicine platform with 3 role-based dashboards, 34 pages and 40+ REST API endpoints covering the complete appointment lifecycle.",
+    highlights: [
+      "JWT auth, FSM appointment states, Stripe + bKash/Nagad payments",
+      "4-step health assessment, real-time chat via Pusher, Django-signal notifications",
+      "Bilingual (English/Bengali), deployed on Vercel + Render with Neon PostgreSQL",
+    ],
     languages:
-      "Next.js | Django REST Framework | PostgreSQL | JWT | Stripe | bKash / Nagad | Pusher | Vercel | Render",
+      "Next.js | Django REST Framework | PostgreSQL | Neon | JWT | Stripe | bKash / Nagad | Pusher",
     image: `${PUBLIC}/images/projectImages/sunnah-cure.png`,
     deployedLink: "https://sunnah-cure.vercel.app/",
-    sourceCodeLink: null, // TODO: add GitHub repo URL if public
+    sourceCodeLink: "https://github.com/tanjilahmed12345/sunnah-cure",
   },
   {
+    category: "personal",
     name: "MoneyPilot",
-    projectType: "Personal Finance Dashboard with AI Insights",
+    projectType: "Full Stack · Personal Finance Dashboard",
     description:
-      "Personal finance dashboard covering expenses, budgets, savings goals, net worth and a lend/borrow ledger. Includes AI-powered spending insights, automatic merchant categorisation and anomaly detection, with a client-first Zustand architecture synced to PostgreSQL via Prisma, multi-currency, CSV import and PDF export.",
-    languages:
-      "Next.js | TypeScript | PostgreSQL | Prisma | Zustand | JWT | AI Insights",
+      "An all-in-one finance dashboard for expenses, budgets, savings goals, net worth and a lend/borrow ledger, with an app-like feel thanks to optimistic UI.",
+    highlights: [
+      "Client-first Zustand state synced to PostgreSQL in the background",
+      "AI spending insights, auto merchant categorisation, anomaly detection, CSV import",
+      "Dark/light themes, multi-currency, PDF export, calendar view, JWT-protected API",
+    ],
+    languages: "Next.js | TypeScript | PostgreSQL | Prisma | Zustand | JWT",
     image: `${PUBLIC}/images/projectImages/moneypilot.png`,
     deployedLink: "https://money-pilot-orcin.vercel.app/auth",
-    sourceCodeLink: null, // TODO: add GitHub repo URL if public
+    sourceCodeLink: "https://github.com/tanjilahmed12345/money-pilot",
   },
   {
+    category: "personal",
     name: "Pharma Nest BD",
-    projectType: "Online Pharmacy Platform",
+    projectType: "Full Stack · Online Pharmacy Platform",
     description:
-      "Bilingual pharmacy e-commerce platform with medicine browsing, OTC/Rx filtering and a 7-stage order lifecycle. Prescription upload with pharmacist review, multi-gateway payments (bKash, Nagad, Rocket, COD) and a clean layered architecture with 40+ REST endpoints, Zod validation and role-based dashboards.",
-    languages:
-      "Next.js | TypeScript | PostgreSQL | Prisma | Zustand | Zod | bKash / Nagad / Rocket",
+      "A production-ready pharmacy e-commerce platform with medicine browsing, OTC/Rx filtering, cart, coupons and a 7-stage order lifecycle from pending to delivered.",
+    highlights: [
+      "Prescription upload with pharmacist review; bKash, Nagad, Rocket and COD payments",
+      "Bilingual UI with Division → District → Upazila address hierarchy",
+      "Layered architecture (services → repositories → API → Prisma), Zod, 40+ endpoints",
+    ],
+    languages: "Next.js | TypeScript | PostgreSQL | Prisma | Zustand | Zod | JWT",
     image: `${PUBLIC}/images/projectImages/pharma-nest-bd.png`,
     deployedLink: "https://pharma-nest-bd.vercel.app/",
-    sourceCodeLink: null, // TODO: add GitHub repo URL if public
+    sourceCodeLink: "https://github.com/tanjilahmed12345/pharma-nest-bd",
   },
   {
-    name: "Hospital Management System",
-    projectType: "Healthcare Operations Web App",
+    category: "personal",
+    name: "Uni Cover Page Generator",
+    projectType: "Frontend · University Assignment Tool",
     description:
-      "A web application that automates day-to-day tasks of a healthcare facility — patient records, doctors, appointments and billing — to improve efficiency, reduce costs and support better quality of care. Built on Django with a responsive Bootstrap front-end.",
-    languages: "Django | Python | HTML | CSS | Bootstrap | JavaScript",
-    image: `${PUBLIC}/images/projectImages/hospital-management.png`,
-    deployedLink: null,
-    sourceCodeLink: null, // TODO: add GitHub repo URL if public
+      "A client-side tool that generates university assignment cover pages with 25 design templates across 5 categories and a real-time A4 live preview.",
+    highlights: [
+      "PDF / PNG / JPG / WEBP export via html2canvas and jsPDF",
+      "Per-field visibility toggles, independent fonts, logo upload, 3 layout modes",
+      "3 custom hooks for form, templates and export — zero backend",
+    ],
+    languages: "React | TypeScript | Vite | Tailwind CSS | jsPDF | html2canvas",
+    image: `${PUBLIC}/images/projectImages/cover-page-generator.png`,
+    deployedLink: "https://cover-page-generator-blush.vercel.app/",
+    sourceCodeLink: "https://github.com/tanjilahmed12345/uni-cover-page-generator",
   },
   {
-    name: "DX-Ball Game",
-    projectType: "Java Desktop Game",
+    category: "client",
+    name: "GreySheet",
+    projectType: "Client · USA — Coin & Currency Pricing Platform",
     description:
-      "A classic brick-breaker game built in Java with Swing and object-oriented design, featuring power-ups, multiple levels and smooth paddle-and-ball physics. Praised for its smooth mechanics and captivating visuals.",
-    languages: "Java | Swing | OOP | Game Loop | Collision Detection",
-    image: `${PUBLIC}/images/projectImages/dx-ball.png`,
-    deployedLink: null,
-    sourceCodeLink: null, // TODO: add GitHub repo URL if public
+      "Responsive UI for a pricing platform used by coin and currency collectors and dealers, spanning 15+ page modules with real-time API data.",
+    highlights: [
+      "Marketplace, shopping cart and subscription-gated pricing tool interfaces",
+      "Mobile-first layouts for API pricing, dealer directory, news and publications",
+      "Consistent UI across Dev, Beta, LiveTest and Production environments",
+    ],
+    languages: "ASP.NET MVC 5 | Razor | Bootstrap | jQuery | ApexCharts",
+    image: `${PUBLIC}/images/projectImages/greysheet.png`,
+    deployedLink: "https://www.greysheet.com/",
+    sourceCodeLink: null,
+  },
+  {
+    category: "client",
+    name: "OneSuite",
+    projectType: "SaaS Product — Multilingual Marketing Website",
+    description:
+      "A multilingual marketing site for a SaaS platform with a dual i18n system serving 140+ static pages, built for speed and search visibility.",
+    highlights: [
+      "155+ reusable components covering 9 features and 7 competitor comparison pages",
+      "SEO pipeline: Sheets-driven metadata, JSON-LD, auto sitemaps, locale-aware OG tags",
+      "Astro SSG with zero-JS-by-default pages, GSAP/Motion animations, React islands",
+    ],
+    languages: "Astro | React | TypeScript | Tailwind CSS | GSAP | i18n",
+    image: `${PUBLIC}/images/projectImages/onesuite.png`,
+    deployedLink: "https://onesuite.io/",
+    sourceCodeLink: null,
+  },
+  {
+    category: "client",
+    name: "Bmboo Lighting",
+    projectType: "Client · USA — Shopify Storefront",
+    description:
+      "Conversion-focused upgrades to a lighting brand's Shopify store, with richer product pages and smoother cart interactions to reduce drop-off.",
+    highlights: [
+      "Image zoom, variant swatches, sticky add-to-cart and spec toggles",
+      "Tuned spacing and typography across 104 sections and 165+ snippets",
+      "Category collection templates, quick view, cart drawer, free-shipping progress bar",
+    ],
+    languages: "Shopify | Liquid | JavaScript | CSS",
+    image: `${PUBLIC}/images/projectImages/bmboo-lighting.png`,
+    deployedLink: "https://bmboo-lighting.com/",
+    sourceCodeLink: null,
+  },
+  {
+    category: "client",
+    name: "DermaQuest",
+    projectType: "Client · USA — Skincare E-commerce Store",
+    description:
+      "A custom design turned into a production Shopify storefront for a professional skincare brand with 20+ years in business and a global customer base.",
+    highlights: [
+      "Mobile-first responsive layout and a dynamic, easy-to-navigate catalog",
+      "International checkout with multiple payment methods",
+      "SEO and performance optimisation for fast loads and organic visibility",
+    ],
+    languages: "Shopify | Liquid | JavaScript | CSS",
+    image: `${PUBLIC}/images/projectImages/dermaquest.png`,
+    deployedLink: "https://dermaquestinc.com/",
+    sourceCodeLink: null,
   },
 ];
 
@@ -295,7 +380,7 @@ export const achievements = [
     text: (
       <>
         <span className="highlight2">Expert</span> on Codeforces with a maximum rating of{" "}
-        <span className="highlight1">1661</span> and <span className="highlight1">1,850+</span> problems solved.
+        <span className="highlight1">1678</span> and <span className="highlight1">1,850+</span> problems solved.
       </>
     ),
     link: "https://codeforces.com/profile/tanjil-ahmed",
