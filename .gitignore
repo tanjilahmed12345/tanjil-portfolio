@@ -24,3 +24,6 @@ yarn-error.log*
 resume/*.aux
 resume/*.log
 resume/*.out
+
+# production build (Vercel builds it from source)
+/build

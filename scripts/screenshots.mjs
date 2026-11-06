@@ -5,7 +5,7 @@
 import { chromium } from "playwright";
 import { mkdir } from "node:fs/promises";
 
-const OUT = "public/images/projectImages";
+const OUT = "public/images/projects";
 const SITES = [
   ["sunnah-cure", "https://sunnah-cure.vercel.app/"],
   ["moneypilot", "https://money-pilot-orcin.vercel.app/"],
@@ -36,12 +36,17 @@ for (const [slug, url] of SITES) {
     await page.waitForTimeout(3000);
     // Dismiss common cookie / newsletter popups.
     for (const sel of [
-      'button:has-text("Accept")', 'button:has-text("Accept all")', 'button:has-text("Got it")',
-      'button:has-text("I agree")', '[aria-label="Close"]', 'button:has-text("No thanks")',
+      'button:has-text("Accept")',
+      'button:has-text("Accept all")',
+      'button:has-text("Got it")',
+      'button:has-text("I agree")',
+      '[aria-label="Close"]',
+      'button:has-text("No thanks")',
       'button:has-text("English")', // Sunnah Cure language picker
     ]) {
       const el = page.locator(sel).first();
-      if (await el.isVisible().catch(() => false)) await el.click({ timeout: 2000 }).catch(() => {});
+      if (await el.isVisible().catch(() => false))
+        await el.click({ timeout: 2000 }).catch(() => {});
     }
     // Scroll through once so lazy images and scroll animations load.
     await page.evaluate(async () => {

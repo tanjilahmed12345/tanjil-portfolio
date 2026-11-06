@@ -1,0 +1,246 @@
+/*
+ * Hero: first screen, badge, headings, buttons and the globe column.
+ */
+
+.hero-section {
+  padding: 4rem var(--section-padding);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Availability Badge Style */
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  padding: 0.5rem 1.25rem !important;
+  border-radius: 999px !important;
+  font-weight: 600;
+  font-size: 0.875rem !important;
+  color: #10b981 !important;
+  margin: 0 0 1.5rem 0;
+  width: fit-content;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.05);
+  line-height: 1; /* Fix vertical alignment of text and dot */
+}
+
+body.dark .availability-badge {
+  background-color: rgba(52, 211, 153, 0.08);
+  border-color: rgba(52, 211, 153, 0.2) !important;
+  color: #34d399 !important;
+  box-shadow: 0 4px 20px rgba(52, 211, 153, 0.06);
+}
+
+.ping-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  position: relative;
+}
+
+body.dark .ping-dot {
+  background-color: #34d399;
+}
+
+.ping-dot::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.4);
+  animation: ping 2s infinite ease-in-out;
+}
+
+body.dark .ping-dot::before {
+  background: rgba(52, 211, 153, 0.4);
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(0.6);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Typing Caret */
+.hero-content h1 span {
+  border-right: 3px solid var(--primary); /* Caret matches primary theme */
+  padding-right: 4px;
+  display: inline-block;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Heading Typography */
+.hero-content h1:first-of-type {
+  font-size: 3.5rem;
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  max-width: 520px;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.join-button,
+.contact-link {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.8rem 2.25rem !important;
+  border-radius: 8px !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  display: inline-block;
+}
+
+.join-button {
+  background: var(--gradient-primary) !important;
+  color: white !important;
+  box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.join-button:hover {
+  background: var(--gradient-hover) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px var(--primary-glow);
+}
+
+.contact-link {
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--text-muted) !important;
+}
+
+.contact-link:hover {
+  border-color: var(--text-primary) !important;
+  background-color: var(--bg-secondary) !important;
+  transform: translateY(-2px);
+}
+
+.iconssphear-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align the globe to the right edge */
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .iconssphear-section {
+    justify-content: center; /* Center the globe when stacked vertically */
+  }
+
+  .hero-content h1:first-of-type,
+  .hero-content h1 {
+    font-size: 2.75rem;
+  }
+
+  .hero-content p {
+    margin-bottom: 2rem;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.tech-globe-placeholder {
+  width: 375px;
+  height: 375px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .hero-content h1:first-of-type,
+  .hero-content h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .join-button,
+  .contact-link {
+    width: 100%;
+  }
+}

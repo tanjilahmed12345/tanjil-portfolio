@@ -1,11 +1,20 @@
+/**
+ * usePageLoader
+ *
+ * Decides how long the intro <LoadingScreen> stays on screen.
+ */
 import { useEffect, useState } from "react";
 
+/** Long enough for the loader animation to finish. */
 const MIN_LOADER_MS = 1400;
+/** Hard cap so a slow asset never blocks the page. */
 const MAX_LOADER_MS = 3500;
 
 /**
  * Keeps the loader visible for at least MIN_LOADER_MS (animation finish)
- * but dismisses early once the page is ready - never blocks past MAX_LOADER_MS.
+ * but dismisses early once the page is ready, and never blocks past MAX_LOADER_MS.
+ *
+ * @returns {boolean} true while the loader should be shown
  */
 export function usePageLoader() {
   const [loading, setLoading] = useState(true);
