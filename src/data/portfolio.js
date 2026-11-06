@@ -35,25 +35,35 @@ export const profile = {
 };
 
 /* ---------- About ---------- */
-// Rendered as rich text; <b> tags are allowed via JSX.
-export const about = (
-  <>
-    Hi, I'm{" "}
-    <b style={{ color: "var(--primary)", fontSize: "1.2em" }}>Tanjil Ahmed</b>{" "}
-    — a <b>Full-Stack Software Engineer</b> with <b>2+ years</b> of
-    experience delivering scalable web applications, <b>SaaS platforms</b>{" "}
-    and <b>e-commerce solutions</b> for clients across the{" "}
-    <b>USA and Europe</b>. At <b>Technext Limited</b> I worked on products
-    like GreySheet, OneSuite and Shopify storefronts, and on my own I build
-    end-to-end apps with <b>Next.js, React, Node.js, Django REST Framework</b>{" "}
-    and <b>PostgreSQL</b>. I'm a <b>CSE graduate</b> from Sylhet Engineering
-    College (CGPA <b>3.80/4.00</b>), co-author of <b>two IEEE papers</b>, and
-    a competitive programmer — <b>Codeforces Expert (1678)</b>, CodeChef 3★
-    and an <b>ICPC Asia Dhaka Regional</b> qualifier with{" "}
-    <b>2,000+ problems</b> solved. I work comfortably in{" "}
-    <b>English, Bengali, Hindi and Urdu</b>.
-  </>
-);
+export const about = {
+  lead: "I build scalable, production-ready web products — from pixel-perfect front-ends to secure, well-structured APIs.",
+  paragraphs: [
+    <>
+      I'm a <b>Full-Stack Software Engineer</b> with 2+ years at{" "}
+      <b>Technext Limited</b>, where I shipped SaaS platforms and e-commerce
+      storefronts for clients across the <b>USA and Europe</b> — including
+      GreySheet, OneSuite and several Shopify brands.
+    </>,
+    <>
+      On my own I build end-to-end products with <b>Next.js, React, Node.js,
+      Django REST Framework</b> and <b>PostgreSQL</b>. I'm a competitive
+      programmer at heart (Codeforces Expert, ICPC Dhaka Regional qualifier),
+      which shapes how I think about clean, efficient code.
+    </>,
+  ],
+  stats: [
+    { value: "2+", label: "Years in industry" },
+    { value: "8", label: "Projects shipped" },
+    { value: "2,000+", label: "Problems solved" },
+    { value: "2", label: "IEEE papers" },
+  ],
+  facts: [
+    { icon: "fa-solid fa-location-dot", label: "Based in", value: "Sylhet, Bangladesh" },
+    { icon: "fa-solid fa-graduation-cap", label: "Education", value: "B.Sc. in CSE · CGPA 3.80/4.00" },
+    { icon: "fa-solid fa-language", label: "Languages", value: "English, Bengali, Hindi, Urdu" },
+    { icon: "fa-solid fa-briefcase", label: "Looking for", value: "Full-time Software Engineer roles" },
+  ],
+};
 
 /* ---------- Education ---------- */
 export const education = [
