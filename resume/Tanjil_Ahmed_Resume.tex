@@ -1,0 +1,231 @@
+% Tanjil Ahmed: Resume
+% Build: pdflatex Tanjil_Ahmed_Resume.tex  (then copy the PDF to ../public/)
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage[letterpaper,top=0.45in,bottom=0.55in,left=0.7in,right=0.7in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{needspace}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\linespread{1.0}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\raggedright
+\emergencystretch=1em
+
+\definecolor{muted}{HTML}{7F807F}
+
+% Section headings: bold, underlined with a full-width rule
+\titleformat{\section}{\needspace{4\baselineskip}\large\bfseries}{}{0em}{}[\vspace{-7pt}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{8pt}{2pt}
+
+% Lists
+\setlist[itemize]{before=\raggedright,leftmargin=1.1em,label=\textbullet,topsep=1pt,itemsep=0pt,parsep=0pt,partopsep=0pt}
+\newlist{subskills}{itemize}{1}
+\setlist[subskills]{leftmargin=1.4em,label=\textbf{--},topsep=0pt,itemsep=0pt,parsep=0pt}
+
+% \role{Title, Company}{Dates}
+\newcommand{\role}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    #1 & #2 \\
+  \end{tabularx}\par\vspace{1pt}}
+
+% \project{Name - Description}{(tech)}{right tag}
+\newcommand{\project}[3]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} \textit{#2} & \hspace{1em}#3 \\
+  \end{tabularx}\par\vspace{0pt}}
+
+\newcommand{\sep}{\enspace$|$\enspace}
+
+\begin{document}
+\raggedright
+
+% ---------- Header ----------
+\begin{center}
+  \makebox[0pt][l]{\hspace{0.39\textwidth}\raisebox{12pt}{\small\textit{\textcolor{muted}{Last updated in November 2026}}}}%
+  {\fontsize{25}{28}\selectfont Tanjil Ahmed}\\[5pt]
+  Sylhet, Bangladesh\\[4pt]
+  \href{mailto:ahmedtanjil12345@gmail.com}{ahmedtanjil12345@gmail.com}\sep
+  \href{tel:+8801716906305}{+8801716906305}\sep
+  \href{https://tanjilahmed.vercel.app}{Portfolio}\sep
+  \href{https://www.linkedin.com/in/tanjilahmed01/}{LinkedIn}\sep
+  \href{https://github.com/tanjilahmed12345}{GitHub}
+\end{center}
+\vspace{-6pt}
+
+% ---------- Summary ----------
+\section{Professional Summary}
+Full-Stack Software Engineer with 2+ years of experience delivering scalable web applications, SaaS platforms, and
+eCommerce solutions for clients across the USA and Europe. Proficient in JavaScript, TypeScript, React.js, Next.js,
+Node.js, Django, and Shopify. Competitive programmer with strong expertise in data structures and algorithms.
+
+% ---------- Skills ----------
+\section{Skills}
+\begin{itemize}
+  \item \textbf{Programming Languages:} C, C++, JavaScript, TypeScript, Python, C\#, Java
+  \item \textbf{Frontend Development:}
+    \begin{subskills}
+      \item \textbf{Technologies:} HTML5, CSS3, SCSS, Sass, Liquid, Razor Templates
+      \item \textbf{Frameworks:} Next.js, Astro, Remix, Tailwind CSS, Bootstrap
+      \item \textbf{Libraries:} React.js, NextUI, Redux, Zustand, Axios, GSAP
+    \end{subskills}
+  \item \textbf{Backend Development:}
+    \begin{subskills}
+      \item \textbf{Runtimes \& Frameworks:} Node.js, Express.js, Django, Django REST Framework, ASP.NET MVC
+      \item \textbf{Authentication:} JWT, SimpleJWT, bcryptjs
+    \end{subskills}
+  \item \textbf{Databases:}
+    \begin{subskills}
+      \item \textbf{Relational:} PostgreSQL (Neon, Supabase), MySQL
+      \item \textbf{Non-relational:} MongoDB
+      \item \textbf{ORM / Query:} Prisma, Django ORM
+    \end{subskills}
+  \item \textbf{DevOps \& Tools:}
+    \begin{subskills}
+      \item \textbf{Version Control:} Git, GitHub, GitLab
+      \item \textbf{Deployment:} Vercel, Netlify, Render
+      \item \textbf{Containerisation:} Docker
+    \end{subskills}
+  \item \textbf{E-commerce \& CMS:} Shopify Theme Development, Shopify Liquid
+\end{itemize}
+
+% ---------- Experience ----------
+\section{Experience}
+\role{\textbf{Junior Software Engineer}, Technext Limited -- Sylhet, Bangladesh}{Aug 2024 -- Jul 2026}
+
+\project{\href{https://greysheet.com}{Greysheet} - Currency pricing platform}{(ASP.NET MVC 5, Razor, Bootstrap, jQuery, ApexCharts)}{Client $\cdot$ USA}
+\begin{itemize}
+  \item Built responsive UI for a coin and currency pricing platform serving collectors and dealers across 15+ page modules.
+  \item Developed marketplace, shopping cart, and subscription-gated pricing tool interfaces with real-time API data integration.
+  \item Implemented mobile-first responsive layouts for API pricing, dealer directory, news, and publication pages.
+  \item Collaborated on multi-environment deployment workflows (Dev, Beta, LiveTest, Production) ensuring consistent UI across all stages.
+\end{itemize}
+\vspace{3pt}
+
+\project{\href{https://onesuite.io}{OneSuite} - SaaS Marketing Website}{(Astro, React, TypeScript, Tailwind CSS)}{Own Product}
+\begin{itemize}
+  \item Built a multilingual marketing site for a SaaS platform using Astro, React, TypeScript, and Tailwind CSS with a dual i18n system serving 140+ static pages.
+  \item Developed a modular content architecture with 155+ reusable components, dynamic routing, and TypeScript-based localization to support 9 product features and 7 competitor comparison pages.
+  \item Implemented SEO infrastructure with Google Sheets-driven metadata, JSON-LD structured data, auto-generated sitemaps, and locale-aware Open Graph tags for multi-language indexing.
+  \item Engineered a performant static site using Astro SSG with GSAP/Motion animations, optimized font loading, and a hybrid Astro + React component strategy for zero-JS-by-default pages with selective client-side interactivity.
+\end{itemize}
+\vspace{3pt}
+
+\project{\href{https://bmboo-lighting.com}{Bmboo Lighting} - Shopify Storefront}{(Shopify, Liquid.js, CSS)}{Client $\cdot$ USA}
+\begin{itemize}
+  \item Upgraded product pages with image zoom, variant swatches, a sticky add-to-cart bar, and product specification toggles for a better shopping experience.
+  \item Fine-tuned spacing, typography, and layout across 104 sections and 165+ snippets to ensure visual consistency on all devices.
+  \item Built and styled category-specific collection templates with tailored banner layouts, card designs, and showcase components.
+  \item Enhanced quick view modals, cart drawer interactions, free shipping progress bars, and mobile sticky navigation to reduce drop-off.
+\end{itemize}
+\vspace{5pt}
+
+\needspace{8\baselineskip}
+\role{\textbf{Intern Software Engineer}, Technext Limited -- Sylhet, Bangladesh}{May 2024 -- Jul 2024}
+
+\project{\href{https://dermaquestinc.com}{DermaQuestInc}}{(Shopify, Liquid.js, CSS, JavaScript)}{Client $\cdot$ USA}
+\begin{itemize}
+  \item Converted a custom design into a fully functional Shopify storefront for a 20+ year professional skincare brand with a mobile-first responsive layout.
+  \item Built an international checkout flow with multiple payment methods and a dynamic product catalog with intuitive navigation for a global customer base.
+  \item Applied SEO best practices and performance optimisations for fast load times and improved organic search visibility.
+  \item Delivered a scalable storefront architecture aligned with the client's growth strategy, translating design concepts into a production-ready digital store.
+\end{itemize}
+
+% ---------- Projects ----------
+\section{Personal Projects}
+\project{\href{https://sunnah-cure.vercel.app}{Sunnah Cure} - Appointment Booking Platform}{(Next.js, Django REST Framework, PostgreSQL)}{Full Stack}
+\vspace{-1pt}{\small\href{https://sunnah-cure.vercel.app}{Live}\sep\href{https://github.com/tanjilahmed12345/sunnah-cure}{GitHub}}
+\begin{itemize}
+  \item Built a full-stack Islamic medicine platform with 3 role-based dashboards, 34 pages, and 40+ REST API endpoints covering the complete appointment lifecycle.
+  \item Secured the backend with JWT auth, FSM appointment states, and Stripe + bKash/Nagad payment integration for the Bangladeshi market.
+  \item Implemented a 4-step health assessment, real-time doctor-patient messaging via Pusher, and automated notifications via Django signals.
+  \item Deployed a bilingual (English/Bengali), production-ready app on Vercel + Render with Neon PostgreSQL.
+\end{itemize}
+\vspace{3pt}
+
+\project{\href{https://money-pilot-orcin.vercel.app}{MoneyPilot} - Personal Finance Dashboard}{(Next.js, PostgreSQL, Prisma, TypeScript)}{Full Stack}
+\vspace{-1pt}{\small\href{https://money-pilot-orcin.vercel.app}{Live}\sep\href{https://github.com/tanjilahmed12345/money-pilot}{GitHub}}
+\begin{itemize}
+  \item Built a full-stack finance dashboard covering expense tracking, budgets, savings goals, net worth, and a lend/borrow ledger in one responsive app.
+  \item Implemented a client-first architecture with Zustand for instant optimistic UI updates synced to PostgreSQL in the background for an app-like experience.
+  \item Added AI-powered spending insights, automatic merchant categorization, CSV import, and anomaly detection across a full analytics and reporting suite.
+  \item Delivered dark/light theming, multi-currency support, PDF export, and a calendar view, with custom JWT auth and middleware-protected API routes.
+\end{itemize}
+\vspace{3pt}
+
+\project{\href{https://pharma-nest-bd.vercel.app}{Pharma Nest BD} - Online Pharmacy Platform}{(Next.js, PostgreSQL, Prisma, TypeScript)}{Full Stack}
+\vspace{-1pt}{\small\href{https://pharma-nest-bd.vercel.app}{Live}\sep\href{https://github.com/tanjilahmed12345/pharma-nest-bd}{GitHub}}
+\begin{itemize}
+  \item Built a production-ready pharmacy e-commerce platform with medicine browsing, OTC/Rx filtering, cart, coupons, and a 7-stage order lifecycle (pending $\rightarrow$ delivered).
+  \item Implemented prescription upload with a pharmacist review workflow and bKash, Nagad, Rocket, and COD payments with admin screenshot verification.
+  \item Delivered a bilingual (English/Bengali) UI with BD address hierarchy (Division $\rightarrow$ District $\rightarrow$ Upazila), JWT cookie auth, and role-based customer and admin dashboards.
+  \item Architected a clean layered codebase (services $\rightarrow$ repositories $\rightarrow$ API $\rightarrow$ Prisma) with Zod validation, Zustand state management, and 40+ REST endpoints, deployed on Vercel.
+\end{itemize}
+\vspace{3pt}
+
+\project{\href{https://cover-page-generator-blush.vercel.app}{Uni Cover Page Generator} - University Assignment Tool}{(React, TypeScript, Vite, Tailwind CSS)}{Frontend}
+\vspace{-1pt}{\small\href{https://cover-page-generator-blush.vercel.app}{Live}\sep\href{https://github.com/tanjilahmed12345/uni-cover-page-generator}{GitHub}}
+\begin{itemize}
+  \item Built a client-side tool for generating university cover pages with 25 design templates across 5 categories and a real-time A4 live preview.
+  \item Implemented PDF/PNG/JPG/WEBP export via html2canvas and jsPDF with per-field visibility toggles and independent font customization.
+  \item Architected the app with 3 custom hooks (form state, template management, export logic), keeping the codebase clean and separated by concern.
+  \item Delivered logo upload with base64 encoding, 3 layout modes, and dark template support, with zero backend and deployable to any static host.
+\end{itemize}
+
+% ---------- Education ----------
+\needspace{6\baselineskip}
+\section{Education}
+\role{\textbf{Sylhet Engineering College} (affiliated with SUST)}{Jan 2019 -- Feb 2024}
+B.Sc. in Computer Science and Engineering (CSE)\\
+CGPA: 3.80 / 4.00
+
+% ---------- Competitive Programming ----------
+\section{Competitive Programming}
+\begin{itemize}
+  \item \textbf{Codeforces} (\href{https://codeforces.com/profile/tanjil-ahmed}{tanjil-ahmed}): 1850+ problems solved $\cdot$ Max rating: 1678 (Expert)
+  \item \textbf{CodeChef} (\href{https://www.codechef.com/users/tanjilvai}{tanjilvai}): 100+ problems solved $\cdot$ Max rating: 1731
+  \item \textbf{LightOJ} (\href{https://lightoj.com/user/ahmedtanjil1}{ahmedtanjil1}): 70+ problems solved
+  \item \textbf{UVa} (TanjilAhmed): 50+ problems solved
+\end{itemize}
+
+% ---------- Publications ----------
+\section{Publications}
+\begin{itemize}
+  \item \href{https://ieeexplore.ieee.org/document/10499543}{S-DrivingRecords: Blockchain Based Enhancing Trust and Transparency in Driving Records Using Hyperledger Fabric} (IEEE Xplore, 2024)
+  \item \href{https://ieeexplore.ieee.org/document/10499556}{SafetyNet: A Decentralized Police Complaint Management System for Bangladesh Using Blockchain Technology} (IEEE Xplore, 2024)
+\end{itemize}
+
+% ---------- Achievements ----------
+\section{Achievements}
+\begin{itemize}
+  \item \textbf{Qualified}, ICPC Asia Dhaka Regional Contest 2023
+  \item \textbf{Qualified}, National Collegiate Programming Contest (NCPC) 2023, Jahangirnagar University
+  \item \textbf{1st Runners Up}, SEC Idea Hackathon 2022
+  \item \textbf{2nd Runners Up}, CSE DAY Programming Contest 2020
+\end{itemize}
+
+% ---------- Activities ----------
+\section{Leadership \& Activities}
+\begin{itemize}
+  \item \textbf{Vice President}, SEC Programming Club (Feb 2023 -- Feb 2024)
+  \item \textbf{Vice President}, SEC CSE Society (Jun 2023 -- Jun 2024)
+  \item \textbf{Programming Workshop Instructor}, ACM Lab, Sylhet Engineering College (Mar 2020 -- Apr 2024)
+  \item \textbf{Problem Setter and Judge}, \href{https://lightoj.com/contest/cs}{CSE Day 2024}, Sylhet Engineering College
+\end{itemize}
+
+% ---------- Language ----------
+\section{Languages}
+English, Bengali, Hindi, Urdu
+
+\end{document}
