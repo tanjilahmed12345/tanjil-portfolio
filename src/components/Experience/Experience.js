@@ -88,7 +88,7 @@ const Experience = () => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <i className="fa-solid fa-business-time"></i> Experience
+        <i className="fa-solid fa-business-time"></i> Work Experience
       </motion.h2>
       <motion.div
         className="experience-timeline"

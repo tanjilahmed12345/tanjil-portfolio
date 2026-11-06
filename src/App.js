@@ -13,6 +13,7 @@ const TapeSection = lazy(() => import("./components/Tape/TapeSection"));
 const Experience = lazy(() => import("./components/Experience/Experience"));
 const Project = lazy(() => import("./components/Project/Project"));
 const Publications = lazy(() => import("./components/Publications/Publications"));
+const Activities = lazy(() => import("./components/Activities/Activities"));
 const Achievement = lazy(() => import("./components/Achievement/Achievement"));
 const CodingProfilesSection = lazy(
   () => import("./components/CodingProfiles/CodingProfiles"),
@@ -71,6 +72,11 @@ function App() {
       <LazyMount minHeight="30vh">
         <Suspense fallback={null}>
           <Achievement />
+        </Suspense>
+      </LazyMount>
+      <LazyMount minHeight="30vh">
+        <Suspense fallback={null}>
+          <Activities />
         </Suspense>
       </LazyMount>
       <LazyMount minHeight="20vh">

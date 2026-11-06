@@ -128,7 +128,7 @@
 }
 
 /* Responsive layout */
-@media (max-width: 992px) {
+@media (max-width: 1300px) {
   .navbar-center {
     position: fixed;
     top: 70px;
@@ -160,4 +160,8 @@
   .navbar-menu-icon {
     display: block;
   }
+}
+
+.navbar-center a.nav-link-animated {
+  white-space: nowrap;
 }

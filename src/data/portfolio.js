@@ -191,32 +191,41 @@ export const experience = [
       "Built an international checkout with multiple payment methods, a dynamic product catalog, and SEO and performance optimisations — then converted to a full-time role.",
     ],
   },
+];
+
+/* ---------- Leadership & Activities (university) ---------- */
+export const activities = [
   {
-    role: "🎓 Programming Workshop Instructor",
-    organization: "ACM Lab, Sylhet Engineering College",
-    duration: "Mar 2020 – Apr 2024",
-    details: [
-      "Taught data structures, algorithms and competitive programming to undergraduate students.",
-      "Trained student teams for national programming contests such as NCPC and ICPC regionals.",
-    ],
-  },
-  {
-    role: "🏆 Vice President",
+    role: "Vice President",
     organization: "SEC Programming Club",
     duration: "Feb 2023 – Feb 2024",
-    details: [
-      "Led club operations and organised programming contests and training sessions.",
-      "Mentored students in competitive programming and grew the club's contest community.",
-    ],
+    icon: "fa-solid fa-code",
+    description:
+      "Led club operations, organised programming contests and training sessions, and mentored students in competitive programming.",
   },
   {
-    role: "🤝 Vice President",
+    role: "Vice President",
     organization: "SEC CSE Society",
     duration: "Jun 2023 – Jun 2024",
-    details: [
-      "Organised academic events and technical seminars for the CSE department.",
-      "Coordinated departmental activities between students and faculty.",
-    ],
+    icon: "fa-solid fa-people-group",
+    description:
+      "Organised academic events and technical seminars, and coordinated departmental activities between students and faculty.",
+  },
+  {
+    role: "Programming Workshop Instructor",
+    organization: "ACM Lab, Sylhet Engineering College",
+    duration: "Mar 2020 – Apr 2024",
+    icon: "fa-solid fa-chalkboard-user",
+    description:
+      "Taught data structures, algorithms and competitive programming to undergraduates, and trained teams for NCPC and ICPC regionals.",
+  },
+  {
+    role: "Problem Setter & Judge",
+    organization: "CSE Day 2024, Sylhet Engineering College",
+    duration: "Feb 2024",
+    icon: "fa-solid fa-gavel",
+    description:
+      "Designed algorithmic problems, prepared test cases, and judged the CSE Day 2024 programming contest.",
   },
 ];
 
@@ -434,8 +443,8 @@ export const achievements = [
   {
     text: (
       <>
-        <span className="highlight2">Problem Setter &amp; Judge</span> for the CSE Day 2024 programming contest —
-        designed problems and test cases.
+        Graduated <span className="highlight2">With Distinction</span> — CGPA{" "}
+        <span className="highlight1">3.80/4.00</span> in Computer Science &amp; Engineering.
       </>
     ),
     link: null,
