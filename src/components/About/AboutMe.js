@@ -2,6 +2,7 @@ import React from "react";
 import "./AboutMeCSS.css";
 import { motion } from "framer-motion";
 import { profile, about } from "../../data/portfolio";
+import CountUp from "./CountUp";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
@@ -68,7 +69,7 @@ const AboutMe = () => {
           <motion.ul className="about-stats" {...fadeUp(0.25)}>
             {about.stats.map((s) => (
               <li key={s.label} className="about-stat">
-                <span className="about-stat-value">{s.value}</span>
+                <CountUp value={s.value} className="about-stat-value" />
                 <span className="about-stat-label">{s.label}</span>
               </li>
             ))}
