@@ -1,10 +1,10 @@
 /* ==========================================================================
-   PORTFOLIO DATA — Tanjil Ahmed
+   PORTFOLIO DATA: Tanjil Ahmed
    --------------------------------------------------------------------------
    Everything that appears on the site lives in this one file.
    Edit text here; you should not need to touch the components.
 
-   Search this file for "TODO" — those are values I could not get from the
+   Search this file for "TODO": those are values I could not get from the
    Europass CV and filled with a sensible placeholder. Replace them.
    ========================================================================== */
 
@@ -19,7 +19,7 @@ export const profile = {
   footerSubtitle: "Full-Stack Software Engineer",
   heroTagline: "I build scalable products for the WEB",
   heroSubline:
-    "Full-Stack Software Engineer · Next.js · React · Node.js · Django — 2+ years shipping SaaS, e-commerce and web platforms for clients across the USA & Europe.",
+    "Full-Stack Software Engineer working with Next.js, React, Node.js and Django. 2+ years shipping SaaS, e-commerce and web platforms for clients across the USA and Europe.",
   availability: "Open to Full-Time Roles",
 
   email: "ahmedtanjil12345@gmail.com",
@@ -36,19 +36,27 @@ export const profile = {
 
 /* ---------- About ---------- */
 export const about = {
-  lead: "I build scalable, production-ready web products — from pixel-perfect front-ends to secure, well-structured APIs.",
+  eyebrow: "My story",
+  heading: "From competitive programming to production code.",
   paragraphs: [
     <>
-      I'm a <b>Full-Stack Software Engineer</b> with 2+ years at{" "}
-      <b>Technext Limited</b>, where I shipped SaaS platforms and e-commerce
-      storefronts for clients across the <b>USA and Europe</b> — including
-      GreySheet, OneSuite and several Shopify brands.
+      My path into software started with <b>competitive programming</b>.
+      Solving 2,000+ problems and qualifying for the <b>ICPC Asia Dhaka
+      Regional</b> taught me to break hard problems down and write code that
+      is both correct and efficient.
     </>,
     <>
-      On my own I build end-to-end products with <b>Next.js, React, Node.js,
-      Django REST Framework</b> and <b>PostgreSQL</b>. I'm a competitive
-      programmer at heart (Codeforces Expert, ICPC Dhaka Regional qualifier),
-      which shapes how I think about clean, efficient code.
+      At <b>Technext Limited</b> I turned that into production work: the
+      pricing platform UI for GreySheet, a 140+ page multilingual SaaS site
+      for OneSuite, and Shopify storefronts for brands in the USA. I learned
+      to ship on deadlines, across Dev, Beta and Production, as part of a
+      real team.
+    </>,
+    <>
+      Today I build complete products on my own, from database schema to
+      deployment, with <b>Next.js, Django REST Framework and PostgreSQL</b>.
+      I care about clean architecture, fast pages and interfaces that feel
+      effortless to use.
     </>,
   ],
   stats: [
@@ -59,9 +67,9 @@ export const about = {
   ],
   facts: [
     { icon: "fa-solid fa-location-dot", label: "Based in", value: "Sylhet, Bangladesh" },
-    { icon: "fa-solid fa-graduation-cap", label: "Education", value: "B.Sc. in CSE · CGPA 3.80/4.00" },
+    { icon: "fa-solid fa-graduation-cap", label: "Education", value: "B.Sc. in CSE, CGPA 3.80" },
     { icon: "fa-solid fa-language", label: "Languages", value: "English, Bengali, Hindi, Urdu" },
-    { icon: "fa-solid fa-briefcase", label: "Looking for", value: "Full-time Software Engineer roles" },
+    { icon: "fa-solid fa-trophy", label: "Codeforces", value: "Expert, max rating 1678" },
   ],
 };
 
@@ -189,9 +197,9 @@ export const experience = [
     organization: "Technext Limited",
     duration: "Aug 2024 – Jul 2026",
     details: [
-      "Built responsive UI for GreySheet (USA), a coin & currency pricing platform for collectors and dealers — 15+ page modules including marketplace, cart and subscription-gated pricing tools on ASP.NET MVC 5 and Razor.",
-      "Built OneSuite's multilingual SaaS marketing site with Astro, React and TypeScript — 140+ static pages, 155+ reusable components and a full SEO pipeline (JSON-LD, auto sitemaps, locale-aware Open Graph).",
-      "Upgraded the Bmboo Lighting (USA) Shopify storefront — image zoom, variant swatches, sticky add-to-cart, cart drawer and free-shipping bar — refining 104 sections and 165+ snippets.",
+      "Built responsive UI for GreySheet (USA), a coin and currency pricing platform for collectors and dealers, spanning 15+ page modules including marketplace, cart and subscription-gated pricing tools on ASP.NET MVC 5 and Razor.",
+      "Built OneSuite's multilingual SaaS marketing site with Astro, React and TypeScript, with 140+ static pages, 155+ reusable components and a full SEO pipeline (JSON-LD, auto sitemaps, locale-aware Open Graph).",
+      "Upgraded the Bmboo Lighting (USA) Shopify storefront with image zoom, variant swatches, sticky add-to-cart, a cart drawer and a free-shipping bar, refining 104 sections and 165+ snippets.",
       "Shipped across multi-environment pipelines (Dev, Beta, LiveTest, Production) as a core member of the JavaScript team, delivering features for USA and European clients under tight deadlines.",
     ],
   },
@@ -201,7 +209,7 @@ export const experience = [
     duration: "May 2024 – Jul 2024",
     details: [
       "Converted a custom design into a production Shopify storefront for DermaQuest (USA), a 20+ year professional skincare brand, with a mobile-first responsive layout.",
-      "Built an international checkout with multiple payment methods, a dynamic product catalog, and SEO and performance optimisations — then converted to a full-time role.",
+      "Built an international checkout with multiple payment methods, a dynamic product catalog, and SEO and performance optimisations, then converted to a full-time role.",
     ],
   },
 ];
@@ -304,7 +312,7 @@ export const projects = [
     highlights: [
       "PDF / PNG / JPG / WEBP export via html2canvas and jsPDF",
       "Per-field visibility toggles, independent fonts, logo upload, 3 layout modes",
-      "3 custom hooks for form, templates and export — zero backend",
+      "3 custom hooks for form, templates and export, with zero backend",
     ],
     languages: "React | TypeScript | Vite | Tailwind CSS | jsPDF | html2canvas",
     image: `${PUBLIC}/images/projectImages/cover-page-generator.jpg`,
@@ -314,7 +322,7 @@ export const projects = [
   {
     category: "client",
     name: "GreySheet",
-    projectType: "Client · USA — Coin & Currency Pricing Platform",
+    projectType: "Client · USA · Coin & Currency Pricing Platform",
     description:
       "Responsive UI for a pricing platform used by coin and currency collectors and dealers, spanning 15+ page modules with real-time API data.",
     highlights: [
@@ -330,7 +338,7 @@ export const projects = [
   {
     category: "client",
     name: "OneSuite",
-    projectType: "SaaS Product — Multilingual Marketing Website",
+    projectType: "SaaS Product · Multilingual Marketing Website",
     description:
       "A multilingual marketing site for a SaaS platform with a dual i18n system serving 140+ static pages, built for speed and search visibility.",
     highlights: [
@@ -346,7 +354,7 @@ export const projects = [
   {
     category: "client",
     name: "Bmboo Lighting",
-    projectType: "Client · USA — Shopify Storefront",
+    projectType: "Client · USA · Shopify Storefront",
     description:
       "Conversion-focused upgrades to a lighting brand's Shopify store, with richer product pages and smoother cart interactions to reduce drop-off.",
     highlights: [
@@ -362,7 +370,7 @@ export const projects = [
   {
     category: "client",
     name: "DermaQuest",
-    projectType: "Client · USA — Skincare E-commerce Store",
+    projectType: "Client · USA · Skincare E-commerce Store",
     description:
       "A custom design turned into a production Shopify storefront for a professional skincare brand with 20+ years in business and a global customer base.",
     highlights: [
@@ -456,7 +464,7 @@ export const achievements = [
   {
     text: (
       <>
-        Graduated <span className="highlight2">With Distinction</span> — CGPA{" "}
+        Graduated <span className="highlight2">With Distinction</span> with a CGPA of{" "}
         <span className="highlight1">3.80/4.00</span> in Computer Science &amp; Engineering.
       </>
     ),

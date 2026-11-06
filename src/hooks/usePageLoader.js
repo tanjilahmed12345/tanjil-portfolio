@@ -5,7 +5,7 @@ const MAX_LOADER_MS = 3500;
 
 /**
  * Keeps the loader visible for at least MIN_LOADER_MS (animation finish)
- * but dismisses early once the page is ready — never blocks past MAX_LOADER_MS.
+ * but dismisses early once the page is ready - never blocks past MAX_LOADER_MS.
  */
 export function usePageLoader() {
   const [loading, setLoading] = useState(true);

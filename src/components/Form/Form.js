@@ -30,7 +30,7 @@ const Form = () => {
 
     // No EmailJS keys yet → open the visitor's mail app addressed to you.
     if (!emailCfg.serviceId || !emailCfg.templateId || !emailCfg.publicKey) {
-      const body = `${formData.message}\n\n— ${formData.user_name} (${formData.user_email})`;
+      const body = `${formData.message}\n\nFrom: ${formData.user_name} (${formData.user_email})`;
       window.location.href = `mailto:${profile.email}?subject=${encodeURIComponent(
         formData.subject || "Hello from your portfolio",
       )}&body=${encodeURIComponent(body)}`;

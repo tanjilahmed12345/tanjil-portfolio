@@ -14,7 +14,7 @@ const Activities = () => {
         <i className="fa-solid fa-users"></i> Leadership &amp; Activities
       </motion.h2>
       <p className="activities-intro">
-        University roles at Sylhet Engineering College — leading clubs,
+        University roles at Sylhet Engineering College: leading clubs,
         teaching and running programming contests.
       </p>
 

@@ -47,7 +47,7 @@ const Projectitem = (props) => {
     >
       <div className="project-content">
         <div className="project-details">
-          <p className="project-subtitle">— {projectType}</p>
+          <p className="project-subtitle">{projectType}</p>
           <h3 className="project-title">{name}</h3>
           <p>{description}</p>
           {highlights && highlights.length > 0 && (

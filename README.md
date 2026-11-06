@@ -1,4 +1,4 @@
-# Tanjil Ahmed — Portfolio
+# Tanjil Ahmed: Portfolio
 
 Personal portfolio of **Tanjil Ahmed**, Full-Stack Software Engineer (Sylhet, Bangladesh).
 Built with React, framer-motion and three.js. Light/dark theme, fully responsive.
@@ -40,7 +40,7 @@ mail app pre-addressed to you.
 
 ## Deployment (Vercel)
 
-Live at **https://tanjilahmed.vercel.app** — the Vercel project is linked to this
+Live at **https://tanjilahmed.vercel.app**. The Vercel project is linked to this
 GitHub repo, so every push to `main` redeploys automatically. Nothing else to do.
 
 For the contact form keys, add the three `REACT_APP_EMAILJS_*` variables in
