@@ -1,4 +1,6 @@
 // Captures a tall screenshot of each live project for the Projects section.
+// GreySheet (Cloudflare bot check) and Bmboo Lighting (domain now another brand)
+// keep their hand-made covers.
 // Run by .github/workflows/screenshots.yml (needs network access to the sites).
 import { chromium } from "playwright";
 import { mkdir } from "node:fs/promises";
@@ -9,9 +11,7 @@ const SITES = [
   ["moneypilot", "https://money-pilot-orcin.vercel.app/"],
   ["pharma-nest-bd", "https://pharma-nest-bd.vercel.app/"],
   ["cover-page-generator", "https://cover-page-generator-blush.vercel.app/"],
-  ["greysheet", "https://www.greysheet.com/"],
   ["onesuite", "https://onesuite.io/"],
-  ["bmboo-lighting", "https://bmboo-lighting.com/"],
   ["dermaquest", "https://dermaquestinc.com/"],
 ];
 
@@ -38,6 +38,7 @@ for (const [slug, url] of SITES) {
     for (const sel of [
       'button:has-text("Accept")', 'button:has-text("Accept all")', 'button:has-text("Got it")',
       'button:has-text("I agree")', '[aria-label="Close"]', 'button:has-text("No thanks")',
+      'button:has-text("English")', // Sunnah Cure language picker
     ]) {
       const el = page.locator(sel).first();
       if (await el.isVisible().catch(() => false)) await el.click({ timeout: 2000 }).catch(() => {});
