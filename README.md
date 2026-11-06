@@ -40,7 +40,7 @@ mail app pre-addressed to you.
 
 ## Deployment (Vercel)
 
-Live at **https://tanjilahmed.vercel.app** — the Vercel project is linked to this
+Live at **https://tanjil-portfolio-gamma.vercel.app** — the Vercel project is linked to this
 GitHub repo, so every push to `main` redeploys automatically. Nothing else to do.
 
 For the contact form keys, add the three `REACT_APP_EMAILJS_*` variables in
