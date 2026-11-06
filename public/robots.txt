@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://tanjilahmed12345.github.io/Portfolio/sitemap.xml
+Sitemap: https://tanjil-portfolio-gamma.vercel.app/sitemap.xml

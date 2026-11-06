@@ -38,21 +38,10 @@ mail app pre-addressed to you.
 2. `cp .env.example .env` and paste your Service ID, Template ID and Public Key.
 3. Restart `npm run dev` (and rebuild before deploying).
 
-## Deploy to GitHub Pages
+## Deployment (Vercel)
 
-1. Create a GitHub repo named **`Portfolio`** under `tanjilahmed12345`.
-   *(Using another name? Change `homepage` in `package.json` and the URLs in `public/index.html`,
-   `public/sitemap.xml` and `public/robots.txt` to match.)*
-2. Push this code:
-   ```bash
-   git init && git add . && git commit -m "Initial portfolio"
-   git branch -M main
-   git remote add origin https://github.com/tanjilahmed12345/Portfolio.git
-   git push -u origin main
-   ```
-3. Deploy: `npm run deploy` — this builds and pushes to the `gh-pages` branch.
-4. On GitHub: **Settings → Pages → Branch: `gh-pages` / root**.
-   Site goes live at `https://tanjilahmed12345.github.io/Portfolio/`.
+Live at **https://tanjil-portfolio-gamma.vercel.app** — the Vercel project is linked to this
+GitHub repo, so every push to `main` redeploys automatically. Nothing else to do.
 
-Want it at `https://tanjilahmed12345.github.io/` instead? Name the repo `tanjilahmed12345.github.io`
-and set `"homepage": "https://tanjilahmed12345.github.io"`.
+For the contact form keys, add the three `REACT_APP_EMAILJS_*` variables in
+Vercel → Project → Settings → Environment Variables, then redeploy.
