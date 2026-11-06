@@ -438,7 +438,9 @@ export const achievements = [
     text: (
       <>
         Qualified for the <span className="highlight2">National Collegiate Programming Contest (NCPC) 2023</span>{" "}
-        hosted by Jahangirnagar University.
+        and competed in <span className="highlight2">BUET IUPC 2022</span>,{" "}
+        <span className="highlight2">SUST IUPC 2023</span> and{" "}
+        <span className="highlight2">SUST IUPC 2024</span>.
       </>
     ),
     link: null,
