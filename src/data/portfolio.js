@@ -30,7 +30,7 @@ export const profile = {
   // are removed). Replace the PDF in /public with a newer one any time.
   resume: `${PUBLIC}/Tanjil_Ahmed_Resume.pdf`,
 
-  photo: `${PUBLIC}/images/myPhoto.jpg`, // TODO: swap for a higher-resolution photo (≥ 600×600)
+  photo: `${PUBLIC}/images/myPhoto.jpg`,
   logo: `${PUBLIC}/images/logo.png`,
 };
 
