@@ -25,7 +25,7 @@ export const about = {
   ],
   stats: [
     { value: "2+", label: "Years in industry" },
-    { value: "8", label: "Projects shipped" },
+    { value: "9", label: "Projects shipped" },
     { value: "2,000+", label: "Problems solved" },
     { value: "2", label: "IEEE papers" },
   ],

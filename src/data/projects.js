@@ -1,7 +1,7 @@
 /**
  * Projects shown in the Projects section.
  *
- * category    "client" (built at Technext) or "personal"; drives the filter tabs
+ * category    "client" (Technext or freelance client work) or "personal"; drives the filter tabs
  * highlights  up to 3 short bullets under the description
  * image       screenshot in public/images/projects/ (refreshed by the
  *             "Project screenshots" GitHub Action)
@@ -73,6 +73,22 @@ export const projects = [
     image: `${PUBLIC_URL}/images/projects/cover-page-generator.jpg`,
     deployedLink: "https://cover-page-generator-blush.vercel.app/",
     sourceCodeLink: "https://github.com/tanjilahmed12345/uni-cover-page-generator",
+  },
+  {
+    category: "client",
+    name: "Netbios Tech",
+    projectType: "Freelance · Germany · Data Center Services Website",
+    description:
+      "A bilingual company website for a Frankfurt-based data center field services provider, built on a custom WordPress theme with no page builder and no third-party requests.",
+    highlights: [
+      "Custom classic PHP theme with design tokens, core blocks and self-hosted fonts",
+      "45 pages in English and German: 10 service pages, process, industries, coverage, careers, FAQ, Impressum",
+      "Technical SEO with hreflang, JSON-LD ProfessionalService schema, Open Graph and a WPForms contact flow",
+    ],
+    languages: "WordPress | PHP 8.1 | Custom Theme | CSS | JavaScript | WPForms | i18n (EN / DE)",
+    image: `${PUBLIC_URL}/images/projects/netbios-tech.jpg`,
+    deployedLink: "https://netbiostech.com/",
+    sourceCodeLink: null,
   },
   {
     category: "client",

@@ -21,9 +21,9 @@ const FILTERS = [
 
 /** Intro sentence shown under the tabs for each filter. */
 const INTRO = {
-  all: "Production work shipped for clients in the USA & Europe, plus full-stack products I've built end-to-end.",
+  all: "Production work shipped for clients in the USA & Germany, plus full-stack products I've built end-to-end.",
   client:
-    "Built at Technext Limited for clients in the USA: pricing platforms, a multilingual SaaS site and Shopify storefronts.",
+    "Freelance and Technext work for clients in the USA & Germany: a WordPress company site, pricing platforms, a multilingual SaaS site and Shopify storefronts.",
   personal: "Full-stack products I designed, built and deployed myself. All live and open source.",
 };
 

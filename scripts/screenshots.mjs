@@ -13,6 +13,7 @@ const SITES = [
   ["cover-page-generator", "https://cover-page-generator-blush.vercel.app/"],
   ["onesuite", "https://onesuite.io/"],
   ["dermaquest", "https://dermaquestinc.com/"],
+  ["netbios-tech", "https://netbiostech.com/"],
 ];
 
 const W = 1440;

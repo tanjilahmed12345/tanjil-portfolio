@@ -13,6 +13,7 @@ export const skills = {
     { name: "TypeScript", logo: "typescript" },
     { name: "Python", logo: "python" },
     { name: "Java", logo: "java" },
+    { name: "PHP", logo: "php" },
     { name: "C#", logo: "csharp" },
   ],
   Frontend: [
@@ -55,6 +56,7 @@ export const skills = {
     { name: "Netlify", logo: "netlify" },
     { name: "Render", logo: "render" },
     { name: "Shopify / Liquid", logo: "shopify" },
+    { name: "WordPress", logo: "wordpress" },
   ],
   "Developer Tools": [
     { name: "Git", logo: "git" },
